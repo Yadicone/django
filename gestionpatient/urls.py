@@ -17,7 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from dossierpatient.views import index
+from dossierpatient.views import liste_patients
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index)
+    path('',index),
+    path('liste_patients/', liste_patients,),
 ]
+
+
+
+
+

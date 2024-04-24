@@ -1,0 +1,16 @@
+<!-- templates/votre_template.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des patients</title>
+</head>
+<body>
+    <h1>Liste des patients</h1>
+    <ul>
+        {% for patient in patients %}
+        <li>{{ patient.nom }} {{ patient.prenom }} - {{ patient.date_naissance }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
